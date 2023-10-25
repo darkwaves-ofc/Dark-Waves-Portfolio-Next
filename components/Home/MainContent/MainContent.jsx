@@ -2,9 +2,13 @@ import React from "react";
 import "./MainContent.css";
 import { mainData } from "../../../data/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Fade } from "react-reveal";
 import { useState } from "react";
 import { useEffect } from "react";
+import dynamic from "next/dynamic";
+
+const Fade = dynamic(() => import('react-reveal/Fade'), {
+  ssr: false, // Disable server-side rendering
+});
 
 export default function MainContent() {
   const [mobile, setMobile] = useState(false);

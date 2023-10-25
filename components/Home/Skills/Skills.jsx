@@ -1,7 +1,11 @@
 import React from "react";
 import "./Skills.css";
 import { SkillsData } from "../../../data/data";
-import { Fade } from "react-reveal";
+import dynamic from "next/dynamic";
+
+const Fade = dynamic(() => import('react-reveal/Fade'), {
+  ssr: false, // Disable server-side rendering
+});
 
 export default function Skills() {
   return (

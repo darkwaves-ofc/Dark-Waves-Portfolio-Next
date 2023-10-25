@@ -1,7 +1,11 @@
 import React from "react";
 import { mainData } from "../../../data/data";
 import "./AboutCard.css";
-import { Fade } from "react-reveal";
+import dynamic from "next/dynamic";
+
+const Fade = dynamic(() => import('react-reveal/Fade'), {
+  ssr: false, // Disable server-side rendering
+});
 
 export default function AboutCard() {
   return (

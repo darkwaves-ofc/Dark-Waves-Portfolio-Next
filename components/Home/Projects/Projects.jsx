@@ -1,7 +1,11 @@
 import React from "react";
 import { ProjectsData } from "../../../data/data";
 import "./Projects.css";
-import { Fade } from "react-reveal";
+import dynamic from "next/dynamic";
+
+const Fade = dynamic(() => import('react-reveal/Fade'), {
+  ssr: true, // Disable server-side rendering
+});
 
 
 export default function Projects() {
