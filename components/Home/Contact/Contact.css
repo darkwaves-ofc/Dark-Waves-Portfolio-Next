@@ -1,0 +1,32 @@
+.form_container .input_container .input {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  resize: none;
+}
+
+.form_container .input_container {
+  border: var(--color-dark-secondary) 2px solid;
+  border-radius: 0.86rem;
+  padding: 0.56rem;
+}
+.form_container .input_container label {
+  left: 20px;
+  top: 12px;
+  scale: 1;
+  transition: all 300ms;
+  cursor: text;
+}
+.form_container .input_container.active label {
+  left: 12px;
+  scale: 0.8;
+  top: -15px;
+  padding: 1px;
+  background: #fff;
+  color: var(--color-primary);
+}
+
+.form_container .input_container.active svg {
+  color: var(--color-primary);
+}

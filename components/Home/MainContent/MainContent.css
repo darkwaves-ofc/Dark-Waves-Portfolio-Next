@@ -1,0 +1,50 @@
+.main-content .logo__section {
+  position: relative;
+  border-radius: 30%; /* Rounds the corners of the container */
+}
+
+.main-content .logo__section .logo__portfolio {
+  background-color: var(--color-dark-white);
+  width: 18rem;
+  object-fit: cover;
+  clip-path: polygon(67% 13%, 100% 34%, 92% 85%, 36% 100%, 10% 68%, 0 0);
+  animation: cropCircle 26s linear infinite;
+}
+
+@keyframes cropCircle {
+  0% {
+    clip-path: polygon(67% 13%, 100% 34%, 92% 85%, 36% 100%, 10% 68%, 0 0);
+  }
+  10% {
+    clip-path: polygon(50% 15%, 97% 14%, 84% 92%, 49% 98%, 6% 81%, 0 7%);
+  }
+  20% {
+    clip-path: polygon(67% 13%, 100% 21%, 88% 74%, 36% 100%, 8% 75%, 17% 18%);
+  }
+  40% {
+    clip-path: polygon(63% 2%, 100% 31%, 76% 88%, 49% 98%, 4% 59%, 21% 13%);
+  }
+  50% {
+    clip-path: polygon(67% 13%, 100% 34%, 92% 85%, 36% 100%, 10% 68%, 0 0);
+  }
+  60% {
+    clip-path: polygon(50% 15%, 97% 14%, 84% 92%, 49% 98%, 6% 81%, 0 7%);
+  }
+  70% {
+    clip-path: polygon(67% 13%, 100% 21%, 88% 74%, 36% 100%, 8% 75%, 17% 18%);
+  }
+  80% {
+    clip-path: polygon(51% 0, 91% 20%, 82% 70%, 49% 98%, 10% 87%, 11% 1%);
+  }
+  90% {
+    clip-path: polygon(50% 15%, 97% 14%, 84% 92%, 49% 98%, 6% 81%, 0 7%);
+  }
+  100% {
+    clip-path: polygon(67% 13%, 100% 34%, 92% 85%, 36% 100%, 10% 68%, 0 0);
+  }
+}
+
+.main-content {
+  height: 40rem;
+}
+

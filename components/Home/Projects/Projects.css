@@ -1,0 +1,11 @@
+.projects .project-banner img {
+  width: 26rem;
+  height: 18rem;
+  object-fit: cover;
+  scale: 0.98;
+  border-radius: 1.5rem;
+  transition: scale 300ms;
+}
+.projects .project-banner:hover img {
+  scale: 1;
+}
