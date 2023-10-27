@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../../utils/fontAwesomeSetup.js";
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
           <div className="footer-col flex-col-bet">
             <div className="social-links flex-row-bet w-full g-4">
               <a href="#">
-                <FontAwesomeIcon icon="fab fa-facebook-f" />
+                <FontAwesomeIcon size="sm" icon="fab fa-facebook-f" />
               </a>
               <a href="#">
                 <FontAwesomeIcon icon="fab fa-twitter" />

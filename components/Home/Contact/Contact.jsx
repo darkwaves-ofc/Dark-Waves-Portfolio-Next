@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

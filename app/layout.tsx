@@ -1,5 +1,8 @@
+import Header from "@common/Header/Header";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import Footer from "@common/Footer/Footer";
+import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -38,7 +41,13 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <main>
+          <Header />
+          {children}
+          <Footer />
+        </main>
+      </body>
     </html>
   );
 }

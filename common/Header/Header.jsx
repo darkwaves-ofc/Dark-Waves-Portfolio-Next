@@ -1,5 +1,5 @@
-import React from "react";
 import Link from "next/link";
+import "./Header.css"
 
 export default function Header() {
   return (
@@ -8,7 +8,7 @@ export default function Header() {
         DarkWaves.Info
       </Link>
       <nav className="w-30 flex-row-aro font-weight-600">
-        <Link href="/home" className="navbar-link text-dark">
+        <Link href="/" className="navbar-link text-dark">
           Home
         </Link>
         <Link href="/about" className="navbar-link text-dark">
