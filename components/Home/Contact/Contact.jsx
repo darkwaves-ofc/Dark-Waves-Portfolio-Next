@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import InputElement from "../Common/InputElement";
-import Link from "next/link";
+import InputElement from "../common/InputElement";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Contact() {
