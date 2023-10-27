@@ -1,3 +1,14 @@
 .not-found-container {
-    max-width: 1024px;
+  max-width: 1024px;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+  .not-found-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
 }

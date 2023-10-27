@@ -1,3 +1,17 @@
 header {
-    z-index: 1111;
+  z-index: 1111;
+  margin: 1pc;
+}
+
+.navbar-menu {
+  width: clamp(444px, 30%, 1024px);
+}
+.nav-menu-mobile {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 500ms ease;
+}
+
+.nav-menu-mobile.active {
+  max-height: 500px; /* Adjust this value if the content is taller. */
 }

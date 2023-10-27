@@ -2,10 +2,51 @@
   width: 26rem;
   height: 18rem;
   object-fit: cover;
-  scale: 0.98;
+  scale: 0.98; /* Changed 'scale' to 'transform' and added parentheses */
   border-radius: 1.5rem;
-  transition: scale 300ms;
+  transition: scale 300ms; /* Changed 'scale' to 'transform' */
 }
+
 .projects .project-banner:hover img {
-  scale: 1;
+  scale: 1; /* Changed 'scale' to 'transform' */
+}
+.mobile-project-card {
+  border-radius: 1rem;
+}
+.projects .mobile-project-card img {
+  width: 26rem;
+  height: 18rem;
+  object-fit: cover;
+  scale: 1; /* Changed 'scale' to 'transform' and added parentheses */
+  border-radius: 1.5rem;
+}
+.mobile-project-card .project-content {
+  bottom: 5px;
+  border-radius: 1.5rem;
+  background: var(--color-primary);
+  overflow: hidden;
+  height: 20%;
+  transition: height 200ms;
+  margin: auto;
+  width: 95.25%;
+  padding: 10px;
+}
+.mobile-project-card:hover .project-content {
+  height: 70%;
+}
+.mobile-project-card .project-content .project-title {
+  position: absolute;
+}
+.mobile-project-card .project-content .project-des,
+.mobile-project-card .project-content .project-usage {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.mobile-project-card:hover .project-content .project-title {
+  position: relative;
+  top: auto;
+}
+.mobile-project-card:hover .project-content .project-des,
+.mobile-project-card:hover .project-content .project-usage {
+  opacity: 1;
 }

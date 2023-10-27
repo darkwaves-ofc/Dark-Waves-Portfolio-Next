@@ -76,3 +76,10 @@ export const SkillsData = [
   },
 ];
 
+export const commonData = {
+  responsive: {
+    mobile: 320,
+    tablet: 768,
+    desktop: 1024,
+  },
+};

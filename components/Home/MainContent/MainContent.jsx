@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import "./MainContent.css";
 import { mainData } from "../../../data/data";
@@ -6,14 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { useEffect } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
-const Fade = dynamic(() => import('react-reveal/Fade'), {
+const Fade = dynamic(() => import("react-reveal/Fade"), {
   ssr: false, // Disable server-side rendering
 });
 
 export default function MainContent() {
   const [mobile, setMobile] = useState(false);
-
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth <= 768) {
@@ -57,10 +57,12 @@ export default function MainContent() {
           </Fade>
           <Fade right>
             <div className="logo__section">
-              <img
+              <Image
                 src={mainData.logo}
                 alt="Dark Waves Owner"
                 className="logo__portfolio"
+                width={300}
+                height={450}
               />
             </div>
           </Fade>

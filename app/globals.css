@@ -23,9 +23,14 @@
   --space-8: 64px;
 
   /* Primary Color: Royal Blue */
-  --color-primary: #3498db;
-
-  /* Secondary Color: Emerald Green */
+  --main-hue: 208;
+  --color-primary: hsl(var(--main-hue), 92%, 54%);
+  --input-bg: hsl(var(--main-hue), 50%, 50%, 6.5%);
+  --input-bg-hover: hsl(var(--main-hue), 50%, 50%, 14%);
+  --color-primary-hover: hsl(var(--main-hue), 77%, 48%);
+  --light-main-color: hsl(var(--main-hue), 91%, 55%);
+  --input-text: #8c9aaf;
+/* Secondary Color: Emerald Green */
   --color-secondary: #2ecc71;
 
   /* Accent Color: Tomato Red */
@@ -33,10 +38,9 @@
 
   /* Background Color: Light Gray */
   --color-background: #f5f5f5;
-
   /* Text Color: Dark Gray */
   --color-text: #333333;
-
+  --light-text-color: #9ca7b6;
   --color-success: #28a745;
   --color-danger: #dc3545;
   --color-warning: #ffc107;
@@ -73,7 +77,11 @@ a {
   text-decoration: none;
   color: var(--color-dark-light);
 }
-
+input,
+textarea {
+  outline: none;
+  border: none;
+}
 /* Dark theme styles */
 
 /* Font Sizes */
@@ -564,6 +572,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.flex-aro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .flex-start {
   display: flex;

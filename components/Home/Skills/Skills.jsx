@@ -2,8 +2,9 @@ import React from "react";
 import "./Skills.css";
 import { SkillsData } from "../../../data/data";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
-const Fade = dynamic(() => import('react-reveal/Fade'), {
+const Fade = dynamic(() => import("react-reveal/Fade"), {
   ssr: false, // Disable server-side rendering
 });
 
@@ -26,10 +27,20 @@ export default function Skills() {
               </div>
               <div className="content flex-row-eve w-full">
                 {data.content.map((data, index) => (
-                  <Fade left={index % 2 !== 0} right={index % 2 === 0} key={index}>
+                  <Fade
+                    left={index % 2 !== 0}
+                    right={index % 2 === 0}
+                    key={index}
+                  >
                     <div key={index} className="skill_card flex-row-center">
                       <div className="logo">
-                        <img src={data.logo} width={50} alt={data.title} />
+                        <Image
+                          width={50}
+                          height={50}
+                          src={data.logo}
+                          style={{ objectFit: "cover" }}
+                          alt={data.title}
+                        />
                       </div>
                       <div className="card_title m-2 font-md font-weight-600">
                         {data.title}
