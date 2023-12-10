@@ -22,7 +22,7 @@ jobs:
           node-version: '16' # Change to the Node.js version required by your project
 
       - name: Install dependencies
-        run: npm install # or yarn install
+        run: npm install --force # or yarn install
 
       - name: Build Next.js app
         run: npm run build # or yarn build or any other build command your project uses
