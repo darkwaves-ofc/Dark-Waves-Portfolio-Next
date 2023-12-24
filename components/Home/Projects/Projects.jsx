@@ -93,9 +93,13 @@ export default function Projects() {
                       />
                     </a>
                     <div className="project-content w-full flex-col-aro h-70 position-absolute ">
-                      <div className="project-title font-weight-700 font-lg">
-                        {data.title}
-                      </div>
+                      <a
+                        className="project-title font-weight-700 font-lg"
+                        href={data.url}
+                        target="_blank" /* Changed "__blank" to "_blank" */
+                      >
+                       {data.title}
+                      </a>
                       <div className="project-des font-weight-500">
                         {data.des}
                       </div>

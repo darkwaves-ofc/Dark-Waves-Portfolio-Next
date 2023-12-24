@@ -23,16 +23,18 @@
 .mobile-project-card .project-content {
   bottom: 5px;
   border-radius: 1.5rem;
-  background: var(--color-primary);
+  background: #ffffffb0;
   overflow: hidden;
   height: 20%;
-  transition: height 200ms;
+  transition: 200ms;
   margin: auto;
   width: 95.25%;
   padding: 10px;
 }
 .mobile-project-card:hover .project-content {
   height: 70%;
+  background: #fffffff7;
+  border: var(--border);
 }
 .mobile-project-card .project-content .project-title {
   position: absolute;

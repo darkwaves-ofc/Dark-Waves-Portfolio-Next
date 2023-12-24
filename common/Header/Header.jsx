@@ -34,8 +34,8 @@ export default function Header() {
   return (
     <header
       className={`navbar p-2 ${
-        !isMobile ? "position-absolute" : "position-relative"
-      } w-95`}
+        !isMobile ? "position-absolute w-95" : "position-relative"
+      } `}
     >
       <div className="header-content position-relative flex-row-bet">
         <Link
