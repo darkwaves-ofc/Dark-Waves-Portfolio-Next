@@ -30,7 +30,7 @@
   --color-primary-hover: hsl(var(--main-hue), 77%, 48%);
   --light-main-color: hsl(var(--main-hue), 91%, 55%);
   --input-text: #8c9aaf;
-/* Secondary Color: Emerald Green */
+  /* Secondary Color: Emerald Green */
   --color-secondary: #2ecc71;
 
   /* Accent Color: Tomato Red */
@@ -67,6 +67,10 @@ body {
   font-family: var(--font-primary);
   color: var(--color-dark);
   background-color: var(--color-light);
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+
 }
 
 body.dark {

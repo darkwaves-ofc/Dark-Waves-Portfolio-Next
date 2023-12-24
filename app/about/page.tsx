@@ -3,7 +3,6 @@ export const metadata = {
   description: "The Dark Waves OFC",
 };
 
-
 export default function About() {
   return <div>About</div>;
 }

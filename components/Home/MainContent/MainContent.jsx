@@ -38,7 +38,7 @@ export default function MainContent() {
       {!mobile ? (
         <div className="main-content flex-row-center">
           <Fade cascade left>
-            <div className="details__section">
+            <div className="details__section w-full">
               <div className="title font-xl font-weight-700">
                 {mainData.title}
               </div>
@@ -56,7 +56,7 @@ export default function MainContent() {
             </div>
           </Fade>
           <Fade right>
-            <div className="logo__section">
+            <div className="logo__section w-full flex-col-center h-100">
               <Image
                 src={mainData.logo}
                 alt="Dark Waves Owner"

@@ -45,7 +45,7 @@ export default function Header() {
           DarkWaves.Info
         </Link>
         {isMobile && (
-          <div className="menu-icon" onClick={toggleMenu}>
+          <div className="menu-icon cursor-pointer" onClick={toggleMenu}>
             <Fade duration={300}>
               <FontAwesomeIcon
                 icon={isMenuOpen ? "fas fa-times" : "fas fa-bars"}

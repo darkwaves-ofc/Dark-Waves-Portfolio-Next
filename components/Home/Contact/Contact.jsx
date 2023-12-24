@@ -25,7 +25,7 @@ export default function Contact() {
                 Let's work together<span>.</span>
               </h1>
             </div>
-            <form action="index.html" method="post" className="contact-form">
+            <form className="contact-form">
               <InputElement
                 id={"fName"}
                 value={contactInputs.fName}
